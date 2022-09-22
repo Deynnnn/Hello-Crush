@@ -12,13 +12,13 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 14px;
             text-align: center;
-            background-color: rgb(66, 64, 64);
+            background-color: rgb(255, 255, 255);
         }
         .wrapper{
             margin-top: 250px;
             width: 400px;
             height: 200px;
-            border: 10px black solid;
+            border: 6px rgb(142, 10, 10) solid;
             margin-left: auto;
             margin-right: auto;
         }
@@ -33,9 +33,17 @@
             width: 50px;
             font-weight: 600;
             cursor: pointer;
+            transition: all 0.15s;
         }
-        .btn:hover{
-            opacity: 0.5;
+        #yes:hover{
+            border: 2px #00F700 solid;
+            color: #00F700;
+            background-color: rgb(62, 68, 60);
+        }
+        #hinde:hover{
+            border: 2px #f72d00 solid;
+            color: #f72d00;
+            background-color: rgb(62, 68, 60);
         }
         #yes{
             background-color: #00F700;
@@ -44,13 +52,14 @@
             background-color: #f72d00;
         }
         #question{
-            color: white;
+            color: black;
+            font-weight: 600;
         }
     </style>
     <div class="wrapper">
         <div class="container">
             <p id="question">Mahal mo ba ako?</p>
-            <button class="btn" id="yes">Yes</button>
+            <button class="btn" id="yes">Oo</button>
             <button class="btn" id="hinde">Hinde</button>
         </div>
     </div>
